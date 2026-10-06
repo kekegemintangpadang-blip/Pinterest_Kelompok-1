@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pinterest - Beranda</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Styling tambahan untuk transisi/tampilan filter */
+    .pin {
+      transition: opacity 0.3s ease;
+    }
+    .pin.hide {
+      display: none !important;
+    }
+  </style>
 </head>
 <body>
 
@@ -34,51 +43,51 @@
 
   <!-- KATEGORI -->
   <section class="categories">
-    <a href="#" class="chip active">Semua</a>
-    <a href="#" class="chip">Dekorasi Rumah</a>
-    <a href="#" class="chip">Resep</a>
-    <a href="#" class="chip">Fashion</a>
-    <a href="#" class="chip">Travel</a>
-    <a href="#" class="chip">Seni</a>
-    <a href="#" class="chip">Teknologi</a>
-    <a href="#" class="chip">Tanaman</a>
-    <a href="#" class="chip">Fotografi</a>
+    <a href="#" class="chip active" data-category="semua">Semua</a>
+    <a href="#" class="chip" data-category="dekorasi-rumah">Dekorasi Rumah</a>
+    <a href="#" class="chip" data-category="resep">Resep</a>
+    <a href="#" class="chip" data-category="fashion">Fashion</a>
+    <a href="#" class="chip" data-category="travel">Travel</a>
+    <a href="#" class="chip" data-category="seni">Seni</a>
+    <a href="#" class="chip" data-category="teknologi">Teknologi</a>
+    <a href="#" class="chip" data-category="tanaman">Tanaman</a>
+    <a href="#" class="chip" data-category="fotografi">Fotografi</a>
   </section>
 
   <!-- GRID PIN -->
   <main class="pin-grid">
 
-    <article class="pin s3"><div class="media"><img src="https://picsum.photos/seed/p1/400/600" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Ide kamar tidur minimalis</span><span class="more">•••</span></div></article>
+    <!-- DEKORASI RUMAH -->
+    <article class="pin s3" data-category="dekorasi-rumah"><div class="media"><img src="https://picsum.photos/seed/p1/400/600" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Ide kamar tidur minimalis</span><span class="more">•••</span></div></article>
+    <article class="pin s3" data-category="dekorasi-rumah"><div class="media"><img src="https://picsum.photos/seed/p10/400/600" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Ruang tamu warna netral</span><span class="more">•••</span></div></article>
+    <article class="pin s3" data-category="dekorasi-rumah"><div class="media"><img src="https://picsum.photos/seed/p14/400/590" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Desain interior kafe</span><span class="more">•••</span></div></article>
 
-    <article class="pin s1"><div class="media"><img src="https://picsum.photos/seed/p2/400/300" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Sarapan sehat 10 menit</span><span class="more">•••</span></div></article>
+    <!-- RESEP -->
+    <article class="pin s1" data-category="resep"><div class="media"><img src="https://picsum.photos/seed/p2/400/300" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Sarapan sehat 10 menit</span><span class="more">•••</span></div></article>
+    <article class="pin s2" data-category="resep"><div class="media"><img src="https://picsum.photos/seed/p9/400/460" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Resep nasi goreng spesial</span><span class="more">•••</span></div></article>
 
-    <article class="pin s2"><div class="media"><img src="https://picsum.photos/seed/p3/400/450" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Outfit kuliah simpel</span><span class="more">•••</span></div></article>
+    <!-- FASHION -->
+    <article class="pin s2" data-category="fashion"><div class="media"><img src="https://picsum.photos/seed/p3/400/450" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Outfit kuliah simpel</span><span class="more">•••</span></div></article>
 
-    <article class="pin s4"><div class="media"><img src="https://picsum.photos/seed/p4/400/700" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Pemandangan Danau Toba</span><span class="more">•••</span></div></article>
+    <!-- TRAVEL -->
+    <article class="pin s4" data-category="travel"><div class="media"><img src="https://picsum.photos/seed/p4/400/700" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Pemandangan Danau Toba</span><span class="more">•••</span></div></article>
+    <article class="pin s4" data-category="travel"><div class="media"><img src="https://picsum.photos/seed/p12/400/690" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Gunung dan kabut pagi</span><span class="more">•••</span></div></article>
 
-    <article class="pin s2"><div class="media"><img src="https://picsum.photos/seed/p5/400/420" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Setup meja kerja aesthetic</span><span class="more">•••</span></div></article>
+    <!-- SENI -->
+    <article class="pin s1" data-category="seni"><div class="media"><img src="https://picsum.photos/seed/p7/400/310" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Inspirasi poster minimalis</span><span class="more">•••</span></div></article>
+    <article class="pin s2" data-category="seni"><div class="media"><img src="https://picsum.photos/seed/p13/400/440" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Ilustrasi digital lucu</span><span class="more">•••</span></div></article>
+    <article class="pin s1" data-category="seni"><div class="media"><img src="https://picsum.photos/seed/p15/400/320" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Palet warna pastel</span><span class="more">•••</span></div></article>
 
-    <article class="pin s3"><div class="media"><img src="https://picsum.photos/seed/p6/400/580" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Tanaman hias untuk pemula</span><span class="more">•••</span></div></article>
+    <!-- TEKNOLOGI -->
+    <article class="pin s2" data-category="teknologi"><div class="media"><img src="https://picsum.photos/seed/p5/400/420" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Setup meja kerja aesthetic</span><span class="more">•••</span></div></article>
 
-    <article class="pin s1"><div class="media"><img src="https://picsum.photos/seed/p7/400/310" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Inspirasi poster minimalis</span><span class="more">•••</span></div></article>
+    <!-- TANAMAN -->
+    <article class="pin s3" data-category="tanaman"><div class="media"><img src="https://picsum.photos/seed/p6/400/580" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Tanaman hias untuk pemula</span><span class="more">•••</span></div></article>
 
-    <article class="pin s4"><div class="media"><img src="https://picsum.photos/seed/p8/400/680" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Foto langit senja</span><span class="more">•••</span></div></article>
-
-    <article class="pin s2"><div class="media"><img src="https://picsum.photos/seed/p9/400/460" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Resep nasi goreng spesial</span><span class="more">•••</span></div></article>
-
-    <article class="pin s3"><div class="media"><img src="https://picsum.photos/seed/p10/400/600" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Ruang tamu warna netral</span><span class="more">•••</span></div></article>
-
-    <article class="pin s1"><div class="media"><img src="https://picsum.photos/seed/p11/400/300" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Kopi dan buku</span><span class="more">•••</span></div></article>
-
-    <article class="pin s4"><div class="media"><img src="https://picsum.photos/seed/p12/400/690" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Gunung dan kabut pagi</span><span class="more">•••</span></div></article>
-
-    <article class="pin s2"><div class="media"><img src="https://picsum.photos/seed/p13/400/440" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Ilustrasi digital lucu</span><span class="more">•••</span></div></article>
-
-    <article class="pin s3"><div class="media"><img src="https://picsum.photos/seed/p14/400/590" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Desain interior kafe</span><span class="more">•••</span></div></article>
-
-    <article class="pin s1"><div class="media"><img src="https://picsum.photos/seed/p15/400/320" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Palet warna pastel</span><span class="more">•••</span></div></article>
-
-    <article class="pin s2"><div class="media"><img src="https://picsum.photos/seed/p16/400/450" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Tips fotografi pemula</span><span class="more">•••</span></div></article>
+    <!-- FOTOGRAFI -->
+    <article class="pin s4" data-category="fotografi"><div class="media"><img src="https://picsum.photos/seed/p8/400/680" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Foto langit senja</span><span class="more">•••</span></div></article>
+    <article class="pin s1" data-category="fotografi"><div class="media"><img src="https://picsum.photos/seed/p11/400/300" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Kopi dan buku</span><span class="more">•••</span></div></article>
+    <article class="pin s2" data-category="fotografi"><div class="media"><img src="https://picsum.photos/seed/p16/400/450" alt=""><div class="overlay"><div class="top"><button class="board">Papan ▾</button><button class="save">Simpan</button></div><div class="bottom"><span class="circle">↗</span><span class="circle">•••</span></div></div></div><div class="meta"><span class="title">Tips fotografi pemula</span><span class="more">•••</span></div></article>
 
   </main>
 
@@ -93,6 +102,38 @@
     <a href="#">✉<span>Pesan</span></a>
     <a href="#">☺<span>Profil</span></a>
   </nav>
+
+  <!-- JAVASCRIPT LOGIC UNTUK FILTER KATEGORI -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const chips = document.querySelectorAll('.categories .chip');
+      const pins = document.querySelectorAll('.pin-grid .pin');
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          // 1. Ubah status tombol kategori yang aktif
+          chips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+
+          // 2. Ambil nilai kategori yang dipilih
+          const selectedCategory = chip.getAttribute('data-category');
+
+          // 3. Filter elemen pin berdasarkan kategori
+          pins.forEach(pin => {
+            const pinCategory = pin.getAttribute('data-category');
+
+            if (selectedCategory === 'semua' || pinCategory === selectedCategory) {
+              pin.classList.remove('hide');
+            } else {
+              pin.classList.add('hide');
+            }
+          });
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
